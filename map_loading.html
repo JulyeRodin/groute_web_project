@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no"
+  />
+  <title>로딩 중…</title>
+  <!-- 공통 스타일시트 -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- 5초 뒤에 next.html 로 자동 이동 -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        window.location.href = 'map_recommandation.html';
+      }, 3000);
+    });
+  </script>
+</head>
+<body>
+  <div id="iphone-frame">
+    <div class="container">
+      <!-- 로딩용 이미지: .content-img 로 주면 컨테이너 폭에 딱 맞게 나옵니다 -->
+      <img
+        src="코드_삽입용_이미지/map_loading.png"
+        alt="로딩 중…"
+        class="content-img"
+      />
+    </div>
+  </div>
+</body>
+</html>
